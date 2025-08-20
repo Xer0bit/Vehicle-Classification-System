@@ -1,0 +1,15 @@
+{
+    "metadata": {
+        "created_date": "2025-08-21 01:18:14",
+        "last_updated": "2025-08-21 01:26:18",
+        "total_corrections": 1
+    },
+    "corrections": {
+        "test\\20250806230722629_86180ALI_NO.1_4_915_720_1096_765_0_0_3_1_0_99_1_0_0_0_2_340656_HV2.jpg": {
+            "original_class": "truck",
+            "corrected_class": "Car",
+            "confidence": 0.2933596074581146,
+            "timestamp": "2025-08-21 01:26:18"
+        }
+    }
+}
