@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Tester - Image Classification Web UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Test Interface</h1>
+            <p>Test Image Classification API endpoints</p>
+        </header>
+
+        <!-- Navigation -->
+        <div class="nav-section">
+            <a href="{{ url_for('index') }}" class="back-btn">Back to Web UI</a>
+        </div>
+
+        <!-- API Credentials -->
+        <div class="credentials-section">
+            <h2>API Credentials</h2>
+            <div class="credential-item">
+                <label>API Key:</label>
+                <input type="text" id="apiKey" value="{{ api_key }}" readonly>
+                <button onclick="copyToClipboard('apiKey')" class="copy-btn">Copy</button>
+            </div>
+        </div>
+
+        <!-- Quick Tests -->
+        <div class="quick-tests-section">
+            <h2>Quick Tests</h2>
+            <div class="test-buttons">
+                <button onclick="testHealth()" class="test-btn">Health Check</button>
+                <button onclick="testCors()" class="test-btn">CORS Test</button>
+            </div>
+        </div>
+
+        <!-- Image Classification Test -->
+        <div class="classification-test-section">
+            <h2>Classification Test</h2>
+            <form id="apiTestForm" class="api-test-form">
+                <div class="file-input-wrapper">
+                    <input type="file" id="apiImage" name="image" accept=".png,.jpg,.jpeg,.gif" required>
+                    <label for="apiImage" class="file-input-label">
+                        <span class="file-input-text">Choose Image for API Test</span>
+                        <span class="file-input-button">Browse</span>
+                    </label>
+                </div>
+                <div class="auth-headers">
+                    <h3>Authentication Header</h3>
+                    <div class="header-item">
+                        <label>X-API-Key:</label>
+                        <input type="text" id="headerApiKey" readonly>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Test API Classification</button>
+            </form>
+        </div>
+
+        <!-- Response Section -->
+        <div class="response-section">
+            <h2>API Response</h2>
+            <div class="response-tabs">
+                <button class="tab-btn active" onclick="showTab('response')">Response</button>
+                <button class="tab-btn" onclick="showTab('headers')">Headers</button>
+                <button class="tab-btn" onclick="showTab('curl')">cURL Command</button>
+            </div>
+            
+            <div id="responseTab" class="tab-content active">
+                <pre id="responseOutput">No response yet. Run a test to see results.</pre>
+            </div>
+            
+            <div id="headersTab" class="tab-content">
+                <pre id="headersOutput">No headers yet. Run a test to see headers.</pre>
+            </div>
+            
+            <div id="curlTab" class="tab-content">
+                <pre id="curlOutput">No cURL command generated yet.</pre>
+            </div>
+        </div>
+
+        <!-- API Documentation -->
+        <div class="api-docs-section">
+            <h2>API Documentation</h2>
+            <div class="endpoint-docs">
+                <div class="endpoint">
+                    <h3>GET /api/health</h3>
+                    <p><strong>Description:</strong> Check API health status</p>
+                    <p><strong>Authentication:</strong> None required</p>
+                    <p><strong>Response:</strong> JSON with status and classifier state</p>
+                </div>
+                
+                <div class="endpoint">
+                    <h3>POST /api/classify</h3>
+                    <p><strong>Description:</strong> Classify an uploaded image</p>
+                    <p><strong>Authentication:</strong> Required (X-API-Key header)</p>
+                    <p><strong>Request:</strong></p>
+                    <ul>
+                        <li>Header: X-API-Key: your_api_key</li>
+                        <li>Body: multipart/form-data with 'image' field</li>
+                    </ul>
+                    <p><strong>Response:</strong> JSON with classification results</p>
+                    <pre>{
+  "success": true,
+  "class_name": "predicted_class",
+  "confidence": 0.95,
+  "original_class": "original_class"
+}</pre>
+                </div>
+
+                <div class="endpoint">
+                    <h3>GET /api/stats</h3>
+                    <p><strong>Description:</strong> Get API usage statistics</p>
+                    <p><strong>Authentication:</strong> Required (X-API-Key header)</p>
+                    <p><strong>Response:</strong> JSON with usage stats and uptime</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Image Classification System</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/api_test.js') }}"></script>
+</body>
+</html>

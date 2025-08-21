@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification Web UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Classification Test UI</h1>
+            <p>Test image classification model</p>
+        </header>
+
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="flash flash-{{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Status Information -->
+        <div class="status-section">
+            <div class="status-item">
+                <span class="status-label">Classifier Status:</span>
+                <span class="status-value {% if classifier_loaded %}status-success{% else %}status-error{% endif %}">
+                    {% if classifier_loaded %}Active{% else %}Inactive{% endif %}
+                </span>
+            </div>
+        </div>
+
+        <!-- Main Upload Form -->
+        <div class="upload-section">
+            <h2>Upload Image</h2>
+            <form action="{{ url_for('web_classify') }}" method="post" enctype="multipart/form-data" class="upload-form">
+                <div class="file-input-wrapper">
+                    <input type="file" id="image" name="image" accept=".png,.jpg,.jpeg,.gif" required>
+                    <label for="image" class="file-input-label">
+                        <span class="file-input-text">Select File</span>
+                        <span class="file-input-button">Browse</span>
+                    </label>
+                </div>
+                <div class="preview-container" id="previewContainer" style="display: none;">
+                    <img id="imagePreview" src="" alt="Preview">
+                    <p id="fileName"></p>
+                </div>
+                <button type="submit" class="submit-btn" {% if not classifier_loaded %}disabled{% endif %}>
+                    Classify Image
+                </button>
+            </form>
+        </div>
+
+        <!-- API Testing Section -->
+        <div class="api-section">
+            <h2>API Testing</h2>
+            <p>Test the API directly using our testing interface.</p>
+            <a href="{{ url_for('api_test') }}" class="api-test-btn">API Test Interface</a>
+        </div>
+
+        <!-- Quick Info Section -->
+        <div class="info-section">
+            <h3>Instructions</h3>
+            <ul class="info-list">
+                <li>Select an image file (PNG, JPG, JPEG, or GIF)</li>
+                <li>Submit for classification</li>
+                <li>View results</li>
+                <li>Use API interface for direct testing</li>
+            </ul>
+        </div>
+
+        <!-- Configuration Info (for development) -->
+        {% if config.get('DEBUG') %}
+        <div class="debug-section">
+            <h3>🔧 Debug Information</h3>
+            <div class="debug-info">
+                <p><strong>API Key:</strong> <code>{{ api_key }}</code></p>
+                <p><strong>API Secret:</strong> <code>{{ api_secret[:8] }}...</code></p>
+                <p><strong>Classifier Status:</strong> {{ "Loaded" if classifier_loaded else "Not Loaded" }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Image Classification System</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

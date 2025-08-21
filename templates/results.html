@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Results - Image Classification Web UI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Classification Results</h1>
+            <p>Test classification results</p>
+        </header>
+
+        <!-- Navigation -->
+        <div class="nav-section">
+            <a href="{{ url_for('index') }}" class="back-btn">Back to Upload</a>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="results-grid">
+                <!-- Image Display -->
+                <div class="image-display">
+                    <h3>Input Image</h3>
+                    <div class="image-container">
+                        <img src="{{ image_src }}" alt="Uploaded image: {{ filename }}" class="result-image">
+                        <p class="image-filename">{{ filename }}</p>
+                    </div>
+                </div>
+
+                <!-- Classification Results -->
+                <div class="classification-results">
+                    <h3>Results</h3>
+                    
+                    <div class="result-item">
+                        <div class="result-label">Predicted Class:</div>
+                        <div class="result-value class-name">{{ class_name }}</div>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-label">Confidence:</div>
+                        <div class="result-value confidence">
+                            <span class="confidence-percentage">{{ "%.2f"|format(confidence * 100) }}%</span>
+                            <div class="confidence-bar">
+                                <div class="confidence-fill" style="width: {{ confidence * 100 }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if original_class and original_class != class_name %}
+                    <div class="result-item">
+                        <div class="result-label">Original Classification:</div>
+                        <div class="result-value original-class">{{ original_class }}</div>
+                    </div>
+                    {% endif %}
+
+                    <!-- Confidence Level Indicator -->
+                    <div class="confidence-indicator">
+                        {% if confidence >= 0.9 %}
+                            <span class="confidence-level high">High Confidence</span>
+                        {% elif confidence >= 0.7 %}
+                            <span class="confidence-level medium">Medium Confidence</span>
+                        {% else %}
+                            <span class="confidence-level low">Low Confidence</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-section">
+            <a href="{{ url_for('index') }}" class="action-btn primary">Test Another Image</a>
+            <a href="{{ url_for('api_test') }}" class="action-btn secondary">Test API</a>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="info-section">
+            <h3>Result Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Confidence</h4>
+                    <p>Model prediction confidence level. Higher value indicates greater certainty.</p>
+                </div>
+                <div class="info-item">
+                    <h4>Classification</h4>
+                    <p>Predicted category for the input image.</p>
+                </div>
+                {% if original_class and original_class != class_name %}
+                <div class="info-item">
+                    <h4>Original vs Mapped</h4>
+                    <p>Raw model output and mapped category comparison.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Image Classification System</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

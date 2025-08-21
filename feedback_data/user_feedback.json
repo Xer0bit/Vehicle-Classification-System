@@ -1,8 +1,8 @@
 {
     "metadata": {
         "created_date": "2025-08-21 01:18:14",
-        "last_updated": "2025-08-21 01:26:18",
-        "total_corrections": 1
+        "last_updated": "2025-08-21 15:21:04",
+        "total_corrections": 3
     },
     "corrections": {
         "test\\20250806230722629_86180ALI_NO.1_4_915_720_1096_765_0_0_3_1_0_99_1_0_0_0_2_340656_HV2.jpg": {
@@ -10,6 +10,18 @@
             "corrected_class": "Car",
             "confidence": 0.2933596074581146,
             "timestamp": "2025-08-21 01:26:18"
+        },
+        "test\\20250806230206818_04449ACN_NO.1_4_949_692_1130_740_0_0_5_1_0_99_1_0_0_0_2_340642_HV2.jpg": {
+            "original_class": "heavy truck",
+            "corrected_class": "Car",
+            "confidence": 0.39456284046173096,
+            "timestamp": "2025-08-21 12:35:15"
+        },
+        "test\\20250806230215557_No Plate_NO.1_4_0_0_0_0_0_0_4_0_0_0_1_0_0_0_2_340643_HV0.jpg": {
+            "original_class": "family sedan",
+            "corrected_class": "Minitruck",
+            "confidence": 0.9726619124412537,
+            "timestamp": "2025-08-21 15:21:04"
         }
     }
 }

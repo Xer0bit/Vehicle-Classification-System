@@ -1,6 +1,6 @@
 pt/
 dataset/
-
+.env
 #cache
 *.pyc
 *.pyo

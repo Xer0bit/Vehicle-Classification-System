@@ -114,7 +114,7 @@ def retrain_model(feedback_csv, original_model_path, original_encoder_path, outp
     
     # Load weights if available
     try:
-        model.load_state_dict(torch.load(original_model_path, map_location=device))
+        model.load_state_dict(torch.load(original_model_path, map_location=device, weights_only=True))
         print(f"Loaded original model weights from {original_model_path}")
     except Exception as e:
         print(f"Error loading original model weights: {e}")
