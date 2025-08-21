@@ -23,18 +23,22 @@ class ImageClassifier:
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         print(f"Using device: {self.device}")
         
-        # Load label encoder
-        self.label_encoder = torch.load(label_encoder_path)
-        self.num_classes = len(self.label_encoder.classes_)
-        self.classes = self.label_encoder.classes_
-        print(f"Loaded label encoder with {self.num_classes} classes: {self.classes}")
+        # Add safe globals for loading the label encoder
+        from torch.serialization import safe_globals
+        from sklearn.preprocessing import LabelEncoder
+        with safe_globals([LabelEncoder]):
+            # Load label encoder
+            self.label_encoder = torch.load(label_encoder_path, weights_only=False)
+            self.num_classes = len(self.label_encoder.classes_)
+            self.classes = self.label_encoder.classes_
+            print(f"Loaded label encoder with {self.num_classes} classes: {self.classes}")
         
         # Initialize model architecture
         self.model = resnet50(weights=ResNet50_Weights.IMAGENET1K_V2)
         num_ftrs = self.model.fc.in_features
         self.model.fc = torch.nn.Linear(num_ftrs, self.num_classes)
         
-        # Load trained weights
+        # Load trained weights - this is safe to load with weights_only=True as default
         self.model.load_state_dict(torch.load(model_path, map_location=self.device))
         self.model = self.model.to(self.device)
         self.model.eval()

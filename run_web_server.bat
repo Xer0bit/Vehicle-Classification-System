@@ -39,11 +39,18 @@ if not exist "pt\label_encoder.pth" (
     exit /b 1
 )
 
+REM Check if virtual environment exists and activate it
+if exist "venv\Scripts\activate.bat" (
+    echo Activating virtual environment...
+    call venv\Scripts\activate.bat
+    echo Using Python from:
+    where python
+)
+
 REM Check if .env file exists, create if not
 if not exist ".env" (
     echo Creating default .env file...
     echo API_KEY=your_api_key_here > .env
-    echo API_SECRET_KEY=your_secret_key_here >> .env
     echo.
     echo Default .env file created. Please update with your actual credentials.
     echo.
