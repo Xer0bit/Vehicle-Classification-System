@@ -1,7 +1,11 @@
-pt/
-dataset/
+pt/label_encoder.pth
+pt/model_weights.pth
+dataset/test/
+dataset/train/
+dataset/val/
 .env
 #cache
 *.pyc
 *.pyo
 __pycache__/
+

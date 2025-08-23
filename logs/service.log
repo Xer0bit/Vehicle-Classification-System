@@ -1249,4 +1249,139 @@ Checking Python installation and packages...
 Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)] at C:\Users\Admin\AppData\Local\Programs\Python\Python311\python.exe
 Error verifying Python packages. See logs\environment.log for details.
 
-Waiting for 30 seconds, press a key to continue ...2928272625242322212019181716151413121110 9
+Waiting for 30 seconds, press a key to continue ...2928272625242322212019181716151413121110 9Using device: cpu
+Loaded label encoder with 10 classes: ['SUV' 'bus' 'family sedan' 'fire engine' 'heavy truck' 'jeep' 'minibus'
+ 'racing car' 'taxi' 'truck']
+Downloading: "https://download.pytorch.org/models/resnet50-11ad3fa6.pth" to C:\Windows\system32\config\systemprofile/.cache\torch\hub\checkpoints\resnet50-11ad3fa6.pth
+Model loaded successfully
+Using class mapping: Heavy truck/Bus -> Truck, Fire engine/Minitruck -> Minitruck, Other -> Car
+Classifier loaded successfully
+Loaded API key from .env file
+Starting web server on 0.0.0.0:5000
+API Key: %chars:~20,1%%chars:~26,1%%chars:~6,1%%chars:~5,1%%chars:~33,1%%chars:~35,1%%chars:~15,1%%chars:~35,1%%chars:~15,1%%chars:~13,1%%chars:~17,1%%chars:~21,1%%chars:~29,1%%chars:~9,1%%chars:~17,1%%chars:~12,1%%chars:~29,1%%chars:~10,1%%chars:~8,1%%chars:~3,1%%chars:~23,1%%chars:~33,1%%chars:~21,1%%chars:~2,1%%chars:~25,1%%chars:~20,1%%chars:~21,1%%chars:~30,1%%chars:~19,1%%chars:~24,1%%chars:~34,1%%chars:~31,1%
+Classifier loaded: True
+Web UI: http://0.0.0.0:5000
+API Test: http://0.0.0.0:5000/api-test
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+[2025-08-22 16:38:39] [INFO] Discord webhook handler started with 6 second interval
+Using device: cpu
+Loaded label encoder with 10 classes: ['SUV' 'bus' 'family sedan' 'fire engine' 'heavy truck' 'jeep' 'minibus'
+ 'racing car' 'taxi' 'truck']
+Model loaded successfully
+Using class mapping: Heavy truck/Bus -> Truck, Fire engine/Minitruck -> Minitruck, Other -> Car
+Classifier loaded successfully
+[2025-08-22 16:38:41] [INFO] Classifier loaded successfully
+Loaded API key from .env file
+[2025-08-22 16:38:41] [INFO] Loaded API key from .env file
+Starting web server on 0.0.0.0:5000
+[2025-08-22 16:38:41] [INFO] Starting web server on 0.0.0.0:5000
+API Key: sjhdgfyv43t76ctvuywec7ug3ciu3hnrc82
+Classifier loaded: True
+[2025-08-22 16:38:41] [INFO] Classifier loaded: True
+Web UI: http://0.0.0.0:5000
+API Test: http://0.0.0.0:5000/api-test
+[2025-08-22 16:38:41] [INFO] Web UI available at: http://0.0.0.0:5000
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+Received signal 2, shutting down gracefully...
+[2025-08-22 16:46:17] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:46:17] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:46:24] [INFO] Discord webhook handler started with 15 second interval
+Using device: cpu
+Loaded label encoder with 10 classes: ['SUV' 'bus' 'family sedan' 'fire engine' 'heavy truck' 'jeep' 'minibus'
+ 'racing car' 'taxi' 'truck']
+Model loaded successfully
+Using class mapping: Heavy truck/Bus -> Truck, Fire engine/Minitruck -> Minitruck, Other -> Car
+Classifier loaded successfully
+[2025-08-22 16:46:27] [INFO] Classifier loaded successfully
+Loaded API key from .env file
+[2025-08-22 16:46:27] [INFO] Loaded API key from .env file
+Starting web server on 0.0.0.0:5000
+[2025-08-22 16:46:27] [INFO] Starting web server on 0.0.0.0:5000
+API Key: sjhdgfyv43t76ctvuywec7ug3ciu3hnrc82
+Classifier loaded: True
+[2025-08-22 16:46:27] [INFO] Classifier loaded: True
+Web UI: http://0.0.0.0:5000
+API Test: http://0.0.0.0:5000/api-test
+[2025-08-22 16:46:27] [INFO] Web UI available at: http://0.0.0.0:5000
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+Received signal 2, shutting down gracefully...
+[2025-08-22 16:47:59] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:47:59] [INFO] Service shutdown: Received signal 2
+[2025-08-22 20:47:00] [INFO] Discord webhook handler started with 15 second interval
+Using device: cpu
+Loaded label encoder with 10 classes: ['SUV' 'bus' 'family sedan' 'fire engine' 'heavy truck' 'jeep' 'minibus'
+ 'racing car' 'taxi' 'truck']
+Model loaded successfully
+Using class mapping: Heavy truck/Bus -> Truck, Fire engine/Minitruck -> Minitruck, Other -> Car
+Classifier loaded successfully
+[2025-08-22 20:47:05] [INFO] Classifier loaded successfully
+Loaded API key from .env file
+[2025-08-22 20:47:05] [INFO] Loaded API key from .env file
+Starting web server on 0.0.0.0:5000
+[2025-08-22 20:47:05] [INFO] Starting web server on 0.0.0.0:5000
+API Key: sjhdgfyv43t76ctvuywec7ug3ciu3hnrc82
+Classifier loaded: True
+[2025-08-22 20:47:05] [INFO] Classifier loaded: True
+Web UI: http://0.0.0.0:5000
+API Test: http://0.0.0.0:5000/api-test
+[2025-08-22 20:47:05] [INFO] Web UI available at: http://0.0.0.0:5000
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+Received signal 2, shutting down gracefully...
+[2025-08-22 23:03:38] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 23:03:38] [INFO] Service shutdown: Received signal 2
+[2025-08-22 23:03:38] [ERROR] Error sending message to Discord: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1408384118537846824/EIbbOdVBrcJtlGzJFpAEJqkmPUEsueFbhM95x9V2DBBZM6DQ7JwC6nVtXX2TzWyL0JkN (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022C1A421A90>: Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-08-22 23:03:38] [ERROR] Error sending message to Discord: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1408384118537846824/EIbbOdVBrcJtlGzJFpAEJqkmPUEsueFbhM95x9V2DBBZM6DQ7JwC6nVtXX2TzWyL0JkN (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022C1A421310>: Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-08-23 10:32:47] [INFO] Discord webhook handler started with 15 second interval
+Using device: cpu
+Loaded label encoder with 10 classes: ['SUV' 'bus' 'family sedan' 'fire engine' 'heavy truck' 'jeep' 'minibus'
+ 'racing car' 'taxi' 'truck']
+Model loaded successfully
+Using class mapping: Heavy truck/Bus -> Truck, Fire engine/Minitruck -> Minitruck, Other -> Car
+Classifier loaded successfully
+[2025-08-23 10:32:54] [INFO] Classifier loaded successfully
+Loaded API key from .env file
+[2025-08-23 10:32:54] [INFO] Loaded API key from .env file
+Starting web server on 0.0.0.0:5000
+[2025-08-23 10:32:54] [INFO] Starting web server on 0.0.0.0:5000
+API Key: sjhdgfyv43t76ctvuywec7ug3ciu3hnrc82
+Classifier loaded: True
+[2025-08-23 10:32:54] [INFO] Classifier loaded: True
+Web UI: http://0.0.0.0:5000
+API Test: http://0.0.0.0:5000/api-test
+[2025-08-23 10:32:54] [INFO] Web UI available at: http://0.0.0.0:5000
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+[2025-08-23 10:34:35] [ERROR] Error sending message to Discord: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1408384118537846824/EIbbOdVBrcJtlGzJFpAEJqkmPUEsueFbhM95x9V2DBBZM6DQ7JwC6nVtXX2TzWyL0JkN (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026BBF8F1A90>: Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-08-23 10:43:27] [ERROR] Error sending message to Discord: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+[2025-08-23 11:31:34] [ERROR] Error sending message to Discord: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Received signal 2, shutting down gracefully...
+[2025-08-23 11:37:56] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-23 11:37:56] [INFO] Service shutdown: Received signal 2
+[2025-08-23 12:26:00] [INFO] Discord webhook handler started with 15 second interval
+Using device: cpu
+Loaded label encoder with 10 classes: ['SUV' 'bus' 'family sedan' 'fire engine' 'heavy truck' 'jeep' 'minibus'
+ 'racing car' 'taxi' 'truck']
+Model loaded successfully
+Using class mapping: Heavy truck/Bus -> Truck, Fire engine/Minitruck -> Minitruck, Other -> Car
+Classifier loaded successfully
+[2025-08-23 12:26:09] [INFO] Classifier loaded successfully
+Loaded API key from .env file
+[2025-08-23 12:26:09] [INFO] Loaded API key from .env file
+Starting web server on 0.0.0.0:5000
+[2025-08-23 12:26:09] [INFO] Starting web server on 0.0.0.0:5000
+API Key: sjhdgfyv43t76ctvuywec7ug3ciu3hnrc82
+Classifier loaded: True
+[2025-08-23 12:26:09] [INFO] Classifier loaded: True
+Web UI: http://0.0.0.0:5000
+API Test: http://0.0.0.0:5000/api-test
+[2025-08-23 12:26:09] [INFO] Web UI available at: http://0.0.0.0:5000
+ * Serving Flask app 'web_server'
+ * Debug mode: off
+[2025-08-23 12:35:24] [INFO] HTTP Request: 127.0.0.1 - - [23/Aug/2025 12:35:24] "GET /api/classify HTTP/1.1" 405 - (0.000s)
+Received signal 2, shutting down gracefully...
+[2025-08-23 12:38:58] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-23 12:38:58] [INFO] Service shutdown: Received signal 2

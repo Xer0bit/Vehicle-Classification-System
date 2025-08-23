@@ -1,0 +1,136 @@
+[2025-08-22 16:38:39] [INFO] Discord webhook handler started with 6 second interval
+[2025-08-22 16:38:41] [INFO] Classifier loaded successfully
+[2025-08-22 16:38:41] [INFO] Loaded API key from .env file
+[2025-08-22 16:38:41] [INFO] Starting web server on 0.0.0.0:5000
+[2025-08-22 16:38:41] [INFO] Classifier loaded: True
+[2025-08-22 16:38:41] [INFO] Web UI available at: http://0.0.0.0:5000
+[2025-08-22 16:40:09] [INFO] Discord webhook handler started with 6 second interval
+[2025-08-22 16:40:10] [INFO] Test info message
+[2025-08-22 16:40:10] [WARNING] Test warning message
+[2025-08-22 16:40:10] [ERROR] Test error message
+[2025-08-22 16:40:22] [INFO] Discord webhook handler stopped
+[2025-08-22 16:40:22] [INFO] Service shutdown: Normal shutdown
+[2025-08-22 16:40:22] [INFO] Discord webhook handler stopped
+[2025-08-22 16:45:02] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-22 16:45:04] [INFO] Test info message
+[2025-08-22 16:45:04] [WARNING] Test warning message
+[2025-08-22 16:45:04] [ERROR] Test error message
+[2025-08-22 16:45:19] [INFO] Second test info message
+[2025-08-22 16:45:19] [WARNING] Second test warning message
+[2025-08-22 16:45:34] [INFO] Service shutdown: Test shutdown
+[2025-08-22 16:45:45] [INFO] Discord webhook handler stopped
+[2025-08-22 16:45:45] [INFO] Service shutdown: Normal shutdown
+[2025-08-22 16:45:49] [INFO] Discord webhook handler stopped
+[2025-08-22 16:46:17] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:46:17] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:46:24] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-22 16:46:27] [INFO] Classifier loaded successfully
+[2025-08-22 16:46:27] [INFO] Loaded API key from .env file
+[2025-08-22 16:46:27] [INFO] Starting web server on 0.0.0.0:5000
+[2025-08-22 16:46:27] [INFO] Classifier loaded: True
+[2025-08-22 16:46:27] [INFO] Web UI available at: http://0.0.0.0:5000
+[2025-08-22 16:47:59] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:47:59] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:48:35] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-22 16:48:38] [INFO] Classifier loaded successfully
+[2025-08-22 16:48:38] [INFO] Loaded API key from .env file
+[2025-08-22 16:48:38] [INFO] Starting web server on 127.0.0.1:5000
+[2025-08-22 16:48:38] [INFO] Classifier loaded: True
+[2025-08-22 16:48:38] [INFO] Web UI available at: http://127.0.0.1:5000
+[2025-08-22 16:54:03] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:03] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:03] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:03] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:03] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:03] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:03] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:03] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:03] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:03] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:03] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:03] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:04] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:04] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:04] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:04] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:04] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:04] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:04] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:04] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:05] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:05] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:05] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:05] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:05] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:05] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:05] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:05] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:16] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:16] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:16] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:16] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:17] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:17] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:17] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:17] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:17] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:17] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:17] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:17] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:18] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:18] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:18] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:54:18] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:54:22] [INFO] Discord webhook handler stopped
+[2025-08-22 16:54:22] [INFO] Service shutdown: Normal shutdown
+[2025-08-22 16:54:23] [INFO] Discord webhook handler stopped
+[2025-08-22 16:54:46] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-22 16:54:49] [INFO] Classifier loaded successfully
+[2025-08-22 16:54:49] [INFO] Loaded API key from .env file
+[2025-08-22 16:54:49] [INFO] Starting web server on 127.0.0.1:5000
+[2025-08-22 16:54:49] [INFO] Classifier loaded: True
+[2025-08-22 16:54:49] [INFO] Web UI available at: http://127.0.0.1:5000
+[2025-08-22 16:55:03] [INFO] WEB UI classification request received | IP: 127.0.0.1
+[2025-08-22 16:55:03] [INFO] WEB UI classification successful | File: 20250807022818676_K727KB35_NO.1_4_998_776_1196_821_0_0_3_1_0_99_1_0_0_0_2_414289_HV2.jpg | Class: Car | Confidence: 0.92 | IP: 127.0.0.1
+[2025-08-22 16:55:04] [INFO] HTTP Request: 127.0.0.1 - - [22/Aug/2025 16:55:04] "POST /classify HTTP/1.1" 200 - (1.791s)
+[2025-08-22 16:56:19] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:56:19] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:56:20] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:56:20] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:56:20] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:56:20] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:56:20] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 16:56:20] [INFO] Service shutdown: Received signal 2
+[2025-08-22 16:56:25] [INFO] Discord webhook handler stopped
+[2025-08-22 16:56:25] [INFO] Service shutdown: Normal shutdown
+[2025-08-22 16:56:28] [INFO] Discord webhook handler stopped
+[2025-08-22 20:47:00] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-22 20:47:05] [INFO] Classifier loaded successfully
+[2025-08-22 20:47:05] [INFO] Loaded API key from .env file
+[2025-08-22 20:47:05] [INFO] Starting web server on 0.0.0.0:5000
+[2025-08-22 20:47:05] [INFO] Classifier loaded: True
+[2025-08-22 20:47:05] [INFO] Web UI available at: http://0.0.0.0:5000
+[2025-08-22 23:03:38] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-22 23:03:38] [INFO] Service shutdown: Received signal 2
+[2025-08-22 23:03:38] [ERROR] Error sending message to Discord: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1408384118537846824/EIbbOdVBrcJtlGzJFpAEJqkmPUEsueFbhM95x9V2DBBZM6DQ7JwC6nVtXX2TzWyL0JkN (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022C1A421A90>: Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-08-22 23:03:38] [ERROR] Error sending message to Discord: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1408384118537846824/EIbbOdVBrcJtlGzJFpAEJqkmPUEsueFbhM95x9V2DBBZM6DQ7JwC6nVtXX2TzWyL0JkN (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000022C1A421310>: Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-08-23 10:32:47] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-23 10:32:54] [INFO] Classifier loaded successfully
+[2025-08-23 10:32:54] [INFO] Loaded API key from .env file
+[2025-08-23 10:32:54] [INFO] Starting web server on 0.0.0.0:5000
+[2025-08-23 10:32:54] [INFO] Classifier loaded: True
+[2025-08-23 10:32:54] [INFO] Web UI available at: http://0.0.0.0:5000
+[2025-08-23 10:34:35] [ERROR] Error sending message to Discord: HTTPSConnectionPool(host='discord.com', port=443): Max retries exceeded with url: /api/webhooks/1408384118537846824/EIbbOdVBrcJtlGzJFpAEJqkmPUEsueFbhM95x9V2DBBZM6DQ7JwC6nVtXX2TzWyL0JkN (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000026BBF8F1A90>: Failed to resolve 'discord.com' ([Errno 11001] getaddrinfo failed)"))
+[2025-08-23 10:43:27] [ERROR] Error sending message to Discord: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+[2025-08-23 11:31:34] [ERROR] Error sending message to Discord: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+[2025-08-23 11:37:56] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-23 11:37:56] [INFO] Service shutdown: Received signal 2
+[2025-08-23 12:26:00] [INFO] Discord webhook handler started with 15 second interval
+[2025-08-23 12:26:09] [INFO] Classifier loaded successfully
+[2025-08-23 12:26:09] [INFO] Loaded API key from .env file
+[2025-08-23 12:26:09] [INFO] Starting web server on 0.0.0.0:5000
+[2025-08-23 12:26:09] [INFO] Classifier loaded: True
+[2025-08-23 12:26:09] [INFO] Web UI available at: http://0.0.0.0:5000
+[2025-08-23 12:35:24] [INFO] HTTP Request: 127.0.0.1 - - [23/Aug/2025 12:35:24] "GET /api/classify HTTP/1.1" 405 - (0.000s)
+[2025-08-23 12:38:58] [INFO] Received signal 2, shutting down gracefully...
+[2025-08-23 12:38:58] [INFO] Service shutdown: Received signal 2
