@@ -8,7 +8,7 @@
 [![Accuracy](https://img.shields.io/badge/Accuracy-94.5%25-brightgreen.svg)](notebooks/train.ipynb)
 [![Downloads](https://img.shields.io/badge/Downloads-1K-lightgrey)](https://github.com/Xer0bit/Vehicle-Car-MiniTruck-Truck-v2/releases)
 
-## 🌟 Overview
+##  Overview
 
 The Vehicle Classification System is an advanced deep learning solution that accurately classifies vehicles into three categories: **Truck**, **Minitruck**, and **Car**. Built using PyTorch and ResNet50, the system provides high accuracy detection through multiple interfaces including a user-friendly GUI, web server, API, and service integrations.
 
@@ -16,7 +16,7 @@ The Vehicle Classification System is an advanced deep learning solution that acc
 - **Pre-trained Model**: Ready to use without additional training
 - **Multi-Platform**: Works on Windows, Linux, and macOS (service mode Windows-only)
 
-## ✨ Features
+##  Features
 
 - **Multi-class Vehicle Classification**: Accurately identify vehicles as Truck, Minitruck, or Car
 - **Multiple Interface Options**:
@@ -29,7 +29,7 @@ The Vehicle Classification System is an advanced deep learning solution that acc
 - **Batch Processing**: Process multiple images at once
 - **Model Retraining**: Update the model with new data through the retraining system
 
-## 🔧 Installation
+##  Installation
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ The Vehicle Classification System is an advanced deep learning solution that acc
    & .\vision\Scripts\Activate.ps1
    ```
 
-## 🚀 Usage
+##  Usage
 
 The system can be used in multiple ways:
 
@@ -127,7 +127,7 @@ run_service.bat
 stop_service.bat
 ```
 
-## 🔄 Model Retraining
+##  Model Retraining
 
 The system collects feedback during operation, which can be used to continuously improve the model. To retrain with new data:
 
@@ -145,7 +145,7 @@ python retrain.py --data feedback_data/corrected_images/
 
 For detailed information about the training process, see our [training notebook](notebooks/train.ipynb).
 
-## 📊 Dataset & Model Performance
+##  Dataset & Model Performance
 
 ### Dataset
 
@@ -186,7 +186,7 @@ These results were achieved after 20 epochs of training with the following confi
 - Image Size: 224x224
 - Data Augmentation: Normalization with ImageNet stats
 
-## 🛠️ System Architecture
+##  System Architecture
 
 - **Core Classification Engine**: PyTorch with ResNet50 architecture
 - **UI Layer**: PyQt5 for desktop GUI
@@ -214,7 +214,7 @@ The system loads these files by default, providing immediate classification capa
 - Input size: 224x224 RGB images
 - Output: 3 classes (Truck, Minitruck, Car)
 
-## 📝 Technical Documentation
+##  Technical Documentation
 
 For detailed information about specific components:
 
@@ -241,13 +241,13 @@ Performance benchmarks on various hardware configurations:
 | Intel i9-12900K (CPU) | 34.5 ms | 29 |
 | Raspberry Pi 4 | 312 ms | 3.2 |
 
-## 📚 Citation
+##  Citation
 
 If you use this model in your research or project, please cite:
 
 ```bibtex
 @software{xer0bit2025vehicle,
-  author = {Xer0bit},
+  author = {Muhammad Sameer Akram},
   title = {Vehicle-Car-MiniTruck-Truck Classification System},
   year = {2025},
   url = {https://github.com/Xer0bit/Vehicle-Car-MiniTruck-Truck-v2},
